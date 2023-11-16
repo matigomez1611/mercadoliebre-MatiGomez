@@ -1,0 +1,447 @@
+/* Estilos para todo el HTML */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos del Body */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+}
+
+/* Estilos del Header */
+
+header {
+    font-size: 12px;
+    background-color: #EAC926;
+    padding-bottom: 20px;
+}
+
+.maindiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo img {
+    width: 80%;
+}
+
+#menu {
+    text-decoration: none;
+    color: black
+}
+
+.form {
+    display: flex;
+    width: 50%;
+    height: 30px;
+}
+
+.form select {
+    width: 90%;
+    border: solid 1px #ebebeb;
+    border-right: none;
+    text-align: center;
+}
+
+option {
+    color: #666;
+    text-align: left;
+}
+
+.form button {
+    border: solid 1px #ebebeb;
+    background-color: rgb(199, 194, 194);
+    border-left: none;
+}
+
+.burger-menu {
+    color: white;
+    background-color: #1259c3;
+    font-size: 18px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin: auto;
+    border-radius: 4px;
+    padding: 1px 3px 3px 3px;
+}
+
+.burger-menu i {
+    margin-top: 20%;
+}
+
+.banner {
+    width: 100%;
+}
+
+/* Estilos del Main */
+
+main {
+    text-align: center;
+    background-color: #ebebeb;
+    margin: auto;
+    width: 90%;
+}
+
+article {
+    background-color: #ebebeb;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.detalles i {
+    color:  #39b54a; 
+    position: absolute;
+    top: -35px;
+    left: 80%;
+}
+
+.detalles {
+    border-top: 1px solid #ebebeb; 
+    padding: 15px;
+    text-align: left;
+    background-color: white;
+}
+
+.detalles i {
+    border: #39b54a solid 1px;
+    border-radius: 50px;
+    padding: 10px;
+    position: relative;
+    transition: all 0.7s;
+}
+
+.img-producto {
+    width: 100%;
+}
+
+.descuentos {
+    color: #39b54a;
+}
+
+.descripciones {
+    color: #666;
+    font-weight: lighter;
+}
+
+.titulares {
+    font-size: 24px;
+    padding: 10px;
+    color: rgb(105, 105, 105);
+    text-align: left;
+    margin-left: 5px;
+    padding-left: 20px;
+}
+
+.montos .precios {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+}
+
+.montos .descuentos {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 5px;
+    
+}
+
+.descripciones {
+    font-size: 16px;
+}
+
+.montos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    align-items: end;
+}
+
+/* Estilos del Footer */
+
+footer {
+   text-align: center;
+}
+
+footer h3, footer p {
+    color: #666;
+}
+
+footer i {
+    color: #1259c3;
+    font-size: 40px;
+}
+
+.copyright {
+    color: #666;
+    font-size: 15px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+/* Navegación Mobile (menor a tablet) */
+
+@media (width <= 360px) {
+    
+    .maindiv {
+        display: flex;
+        width: 80%;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .form {
+        width: 50%;
+    }
+
+    .form input {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .form button {
+        background-color: white;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: #666;
+    }
+
+    #financia {
+        text-align: center;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .descripciones {
+        display: none;
+    }
+}
+
+/* Navegación en Tablets */
+@media (min-width: 361px) {
+
+    /* Estilos del header */
+
+    .logo {
+        width: 33%;
+    }
+    
+    .form {
+        display: flex;
+        width: 33%;
+        height: 30px;
+    }
+
+    .financia {
+        width: 33%;
+    }
+
+    .navegador {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .lista1 ul, .lista2 ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        padding-left: 10px;
+    }
+
+    li {
+        margin: 20px;
+    }
+
+    /* Estilos del main */
+
+    .ultimasvisitas , .ofertas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    article {
+        width: 40%;
+        padding: 1px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+
+}
+
+/* Navegación en Desktop */
+@media (min-width: 769px) {
+    article {
+        width: 20%;
+    }
+
+    .descripciones {
+        display: none;
+    }
+
+    article:hover {
+        .descripciones {
+            display: unset;
+        }
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .detalles i:hover {
+        transform: rotate(-90deg);
+    }
+
+    .elfooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .seccionfooter {
+        width: 30%;
+    }
+
+    .seccionfooter i:hover {
+        color: #EAC926;
+    }
+}
+
+
+/* Estilos del register y del login */
+
+main {
+    padding: 15px;
+}
+
+.formularioderegistro , .formulariologin {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.registro input , .login input{
+    height: 40px;
+    padding: 10px;
+    margin: 20px;
+    width: 270px;
+    border: white solid 1px;
+    border-radius: 8px;
+}
+
+.tiposusuario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tiposusuario input {
+    width: 20px;
+    margin-right: 2px;
+}
+
+.intereses {
+    width: 50%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.intereses input {
+    width: 20px;
+    height: 20px;
+}
+
+.botones {
+    margin: auto;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botones .botonborrar {
+    background-color: red;
+    color: white;
+    text-decoration: solid;
+    width: 45%;
+    height: 30px;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+}
+
+.botones .botonenviar , .formulariologin button {
+    background-color: #39b54a;
+    color: white;
+    text-decoration: solid;
+    width: 45%;
+    height: 30px;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+}
+
+.formulariologin {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+}
+
+.botonenviar:hover {
+    background-color: #0022AA;
+}
+
+.errorlogin , .error-register {
+    font-size: 11px;
+    color: red;
+    display: none;
+}
+
+
+input:invalid + .errorlogin {
+    display: block;
+}
+
+input:invalid + .error-register {
+    display: block;
+}
