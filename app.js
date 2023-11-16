@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static(publicPath));
 app.listen(PORT, () =>
-    {console.log(`Servidor iniciado en http://localhost:${port}`)});
+    {console.log(`Servidor iniciado en http://localhost:${PORT}`)});
 
 app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/home.html"))
